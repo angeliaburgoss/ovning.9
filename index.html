@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bish-Bosh program</title>
+</head>
+<body>
+  
+<header>
+<h1>Bish-Bosh 2.0</h1>
+</header>
+
+
+    <p>Denna sidan har skapats för att presentera Bish-Bosh programmet. I Bish-Bosh kalkylatorn går det att lista tal från 1 upp till 100.
+        Programmet ber användaren sedan att välja två siffor som är jämnt delbara med andra tal.
+        Exemplevis de tal som är jämnt delbara med 3 och 4 listas som Bish-Bosh. 
+        Medans de tal som endast är jämnt delbara med 3 listas som Bish.
+        De tal som är jämnt delbara med 4 listas som Bosh.
+    </p>
+
+
+<div id="programmet">
+
+<script src="bishbosh.js"></script>
+
+<form id="input">
+    <label for="loopTal">Loop Tal (antal gånger som loopen körs):</label> 
+    <input type="number" id="loopTal" name="loopTal" value="100"> <br> <br>
+
+    <label for="firsNumber">Första siffran att dividera (Bish):</label>
+    <input type="number" id="firstNumber" name="firstNumber" value="3"> <br> <br>
+
+    <label for="secondNumber">Andra siffan att dividera (Bosh):</label>
+    <input type="number" id="secondNumber" name="secondNumber" value="4"> <br> <br>
+
+    <button type="button" onclick="runBishBosh()">Kör Bish-Bosh programmet</button>
+</form>
+
+
+<h2>Resultat</h2>
+</div>
+
+<p class="solid"> </p>
+
+<div id="box">
+<div id="result"></div>
+</div>
+
+
+
+<div id="footer">
+    <p>© Angelia Burgos | 2024</p>
+</div>
+</body>
+</html>
